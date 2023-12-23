@@ -3,4 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+    <display-name>HelloWorldJ2EEProject</display-name>
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>com.example.webappj2ee.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WithAttributes</servlet-name>
+        <servlet-class>com.example.webappj2ee.WithAttributsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WithAttributes</servlet-name>
+        <url-pattern>/attributs</url-pattern>
+    </servlet-mapping>
 </web-app>
