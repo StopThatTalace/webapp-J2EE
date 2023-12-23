@@ -1,4 +1,4 @@
-package com.tld.servlet;
+package com.tld.webapp.controller;
 
 import com.tld.webapp.dao.ProductDAO;
 import com.tld.webapp.dao.ProductDAOImpl;
