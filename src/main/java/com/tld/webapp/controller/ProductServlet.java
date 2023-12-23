@@ -1,4 +1,4 @@
-package com.tld.webapp.servlet;
+package com.tld.webapp.controller;
 
 import com.tld.webapp.model.Product;
 
