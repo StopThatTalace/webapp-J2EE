@@ -13,7 +13,7 @@
   <a href="${pageContext.request.contextPath}/get-all-products">Retrieve a list of products 📃</a>
   <a href="${pageContext.request.contextPath}/product-servlet">Retrieve an example of a product 🤖</a>
   <a href="${pageContext.request.contextPath}/update-product">Update a product 🧬</a>
-  <a href="${pageContext.request.contextPath}/delete-by-id">Delete a product by ID 🚮</a>
+  <a href="${pageContext.request.contextPath}/delete-product">Delete a product by ID 🚮</a>
 </section>
 <form action="${pageContext.request.contextPath}/get-by-id?" method="get">
   <label for="id">Retrieve product by ID 🆔</label>
