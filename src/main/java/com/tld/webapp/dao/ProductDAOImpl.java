@@ -92,12 +92,17 @@ public class ProductDAOImpl implements ProductDAO {
         try {
             connection = databaseConnection.getConnection();
 
-            String sql = "SELECT * FROM Products WHERE product_name = ? OR description = ?";
+            System.out.println("[+] Request search by keyword!");
+
+            String sql = "SELECT * FROM Products WHERE product_name LIKE ? OR description LIKE ?";
             statement = connection.prepareStatement(sql);
-            statement.setString(1, keyword);
-            statement.setString(2, keyword);
+            statement.setString(1, "%" + keyword + "%");
+            statement.setString(2, "%" + keyword + "%");
+
+            System.out.println("[+] query: " + statement);
 
             resultSet = statement.executeQuery();
+
 
             if (resultSet.next()) {
                 // Extraction des données du ResultSet pour créer un objet Product.
