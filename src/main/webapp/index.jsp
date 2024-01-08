@@ -6,7 +6,12 @@
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
 </head>
 <body>
-<h1>Here's some request you can make with my bdd</h1>
+<header>
+  <h1>Here's some request you can make with my bdd</h1>
+  <button>
+    <a class="connect" href="${pageContext.request.contextPath}/auth">Connect</a>
+  </button>
+</header>
 <br/>
 <section>
   <a href="${pageContext.request.contextPath}/create-product">Create a product 🚲</a>
@@ -19,7 +24,7 @@
 <form action="${pageContext.request.contextPath}/get-by-id?" method="get">
   <label for="id">Retrieve product by ID 🆔</label>
   <input type="number" id="id" name="id" required>
-  <button type="submit">Go</button>
+  <button class="GetById" type="submit">Go</button>
 </form>
 </body>
 </html>
