@@ -6,12 +6,12 @@
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
 </head>
 <body>
-<header>
-  <h1>Here's some request you can make with my bdd</h1>
-  <button>
-    <a class="connect" href="${pageContext.request.contextPath}/auth">Connect</a>
-  </button>
-</header>
+  <header>
+    <h1>Here's some request you can make with my bdd</h1>
+    <button>
+      <a class="connect" href="${pageContext.request.contextPath}/auth">Connect</a>
+    </button>
+  </header>
 <br/>
 <section>
   <a href="${pageContext.request.contextPath}/create-product">Create a product 🚲</a>
